@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+
+    /* Brand */
+    --navy: 203 75% 14%;          /* #09293E */
+    --teal: 187 88% 33%;          /* #0A8FA0 */
+    --cyan-accent: 180 100% 42%;  /* #00D4D4 */
+    --near-black: 0 0% 5%;        /* #0d0d0d */
+
+    --primary: 187 88% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 203 75% 14%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 180 100% 42%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 187 88% 33%;
+
+    --radius: 0.5rem;
+
+    --gradient-teal: linear-gradient(135deg, hsl(var(--teal)), hsl(var(--cyan-accent)));
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; }
+  .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+}
+
+@layer utilities {
+  .bg-navy { background-color: hsl(var(--navy)); }
+  .bg-teal { background-color: hsl(var(--teal)); }
+  .bg-near-black { background-color: hsl(var(--near-black)); }
+  .text-teal { color: hsl(var(--teal)); }
+  .text-cyan-accent { color: hsl(var(--cyan-accent)); }
+  .gradient-teal { background-image: var(--gradient-teal); }
+  .text-gradient-teal {
+    background-image: var(--gradient-teal);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-justify { text-align: justify; }
+}
+
+@keyframes ecg-draw {
+  from { stroke-dashoffset: 2000; }
+  to { stroke-dashoffset: 0; }
+}
+.animate-ecg { stroke-dasharray: 2000; animation: ecg-draw 4s linear infinite; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal { opacity: 0; }
+.reveal.in-view { animation: fade-up 0.8s ease-out forwards; }

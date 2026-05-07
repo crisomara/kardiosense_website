@@ -9,7 +9,7 @@ const Problem = () => (
       </div>
       <div className="md:col-span-7 md:col-start-7 reveal">
         <p className="text-justify text-white/80 leading-relaxed text-lg mb-6">
-          Cardiovascular disease is the world's deadliest illness, and Africa carries a disproportionate share
+          Cardiovascular disease is the world's leading cause of mortality and morbidity, and Africa carries a disproportionate share
           of its weight. Over <span className="text-cyan-accent font-medium">1.5 million people</span> die each year
           in sub-Saharan Africa from conditions that, in better-resourced parts of the world, are routinely caught
           early. The tragedy is not that treatments don't exist it is that the tools to detect risk in time are

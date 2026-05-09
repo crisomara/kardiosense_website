@@ -16,10 +16,12 @@ const Story = () => (
   <div id="story">
     <Block bg="bg-near-black text-white" label="Our Story" title="Born in Uganda. Built for the world.">
       <p className="mb-6 text-white/85">
-        In 2024, in Kampala, a small team of engineers and clinicians came together
-        around a quiet, stubborn fact: too many people on this continent are dying of Cardiovascular disease that
-        could have been seen coming. Not because medicine doesn't know how to look but because the
-        looking has never been built for here.
+        In 2024, in Kampala, two-third year Biomedical Engineering students found themselves asking a simple but very important question; 
+        Why are there so many people dying from heart diseases and what could they do to reduce that number.
+        What began as late-night discussions and simple IoT ECG monitoring device slowly eveolved into something much bigger. As we read more about the problem,
+        and studied the realities of healthcare in Low and Middle income settings, we saw how inaccessible cardiac diagnostics remained for millions. 
+        We drew wisdom from a common saying; "Prevention is better than Cure",
+        and we realized it wasn't anout monitoring the heart but catching the danger before it arrives. 
       </p>
       <p className="mb-6 text-white/85">
         Kardiosense started as a question. What would cardiac care look like if it were designed,
@@ -29,7 +31,10 @@ const Story = () => (
       </p>
       <p className="text-white/85">
         Our answer is an AI cardiac platform that runs offline, costs little to deploy, and
-        speaks the language of both patients and providers. We started in Uganda. We are building for the
+        speaks the language of both patients and providers, wherever they are, from urban hospitals to rural healthcare centres. 
+        What started as a pair of engineers has now grown into a rich multidisciplinary team, with clinicians, venture capitalists and researchers, 
+        from all over the African continent, to join the mission to help shape technology that is not only intelligent, but clinically meaningfull and human-centred.
+        We started in Uganda. We are building for the
         world.
       </p>
     </Block>
